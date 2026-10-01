@@ -1,0 +1,99 @@
+Package quinas;
+
+Helpers
+    /* Caracteres Básicos */
+    digito = ['0' .. '9'];
+    digito_bin = ['0' + '1'];
+    letra_minuscula = ['a' .. 'z'];
+    letra_maiuscula = ['A' .. 'Z'];
+    letra = letra_minuscula | letra_maiuscula;
+    
+    /* Quebras de linha e brancos */
+    cr = 13;
+    lf = 10;
+    tab = 9;
+    espaco = ' ';
+    fim_de_linha = cr | lf | cr lf;
+    espacos = (espaco | tab | fim_de_linha)+;
+
+    /* Auxiliares para Comentários de Bloco no estilo C (não aninhados) */
+    qualquer_caractere = [0 .. 0xffff];
+    nao_traco = [qualquer_caractere - '-'];
+    nao_barra_traco = [qualquer_caractere - ['/' + '-']];
+
+States
+    /* vai precisar depois na parte sintatica */
+    normal;
+
+Tokens
+    /* Palavras Reservadas e Tipos Primitivos */
+    numero = 'numero';
+    booleano = 'booleano';
+
+    /* Valores Booleanos */
+    val_verdadeiro = 'V';
+    val_falso = 'F';
+
+    /* Marcador de Entrada */
+    ponto_entrada = '++';
+
+    /* Delimitadores e Pontuação */
+    colchete_esq = '[';
+    colchete_dir = ']';
+    dois_pontos = ':';
+    pipe = '|';
+    igual = '=';
+    cerquilha = '#';
+    parentese_esq = '<';
+    parentese_dir = '>';
+
+    /* Operadores Aritméticos */
+    mais = '+';
+    menos = '-';
+    ponto = '.';
+    barra = '/';
+    resto = '\';
+    div_inteira = '//';
+    potencia = '`';
+
+    /* Operadores Relacionais */
+    maior_que = '>>';
+    menor_que = '<<';
+    igualdade = '==';
+
+    /* Operadores Booleanos */
+    e_logico = '^';
+    nao_logico = '¬';
+    ou_logico = 'v';
+    guarda_pipe = '||';
+
+    /* Identificadores
+       - Devem ter duas ou mais letras.
+       - Parâmetros primitivos(ID): apenas letras minúsculas (pelo menos 2).
+       - Constantes: apenas letras maiúsculas (pelo menos 2).
+       - Funções: iniciam com maiúscula e contêm pelo menos mais uma letra.
+       - numeral inteiro pode ser pelo menos um digito normal x ou binario 0by para y = qualquer numero binario
+    */
+    id_const = letra_maiuscula letra_maiuscula+;
+    id_funcao = letra_maiuscula letra+;
+    id = letra_minuscula letra_minuscula+;
+
+    /* Numerais */
+    numeral_int =  ( digito+ ) | ( '0b' digito_bin+ );
+    numeral_real = ( digito+ ) ',' ( digito+ );
+
+    /* Ignorados (Brancos e Comentários) */
+    brancos = espacos;
+    comentario_linha = '--' [qualquer_caractere - [cr + lf]]* fim_de_linha?;
+    comentario_bloco = '/--' nao_traco* '-' (nao_barra_traco nao_traco* '-' | '-')* '/';
+
+Ignored Tokens
+    brancos,
+    comentario_linha,
+    comentario_bloco;
+/*
+vai precisar depois para fazer as glc's na parte sintatica
+Productions
+    algoritmo = dec_funcao+ ;
+
+ */
