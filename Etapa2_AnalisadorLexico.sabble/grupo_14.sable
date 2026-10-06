@@ -1,5 +1,10 @@
 Package quinas;
-
+    /*Grupo 14 
+	ENZO LIBÓRIO FRAGA
+	JOÃO VICTOR CARVALHO SIMÕES
+	JOÃO CARLOS CRUZ SANTOS
+	MAXWELL ALEXANDRE SOUZA
+    */
 Helpers
     /* Caracteres Básicos */
     digito = ['0' .. '9'];
@@ -22,7 +27,7 @@ Helpers
     nao_barra_traco = [qualquer_caractere - ['/' + '-']];
 
 States
-    /* vai precisar depois na parte sintatica */
+    /* estado basico(nem precisava declarar mas é bom garantir) */
     normal;
 
 Tokens
@@ -92,7 +97,7 @@ Ignored Tokens
     comentario_linha,
     comentario_bloco;
 /*
-vai precisar depois para fazer as glc's na parte sintatica
+vai precisar depois para fazer as glc's na parte sintatica ex:.
 Productions
     algoritmo = dec_funcao+ ;
 
