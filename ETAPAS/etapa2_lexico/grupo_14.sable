@@ -1,10 +1,12 @@
 Package quinas;
-    /*Grupo 14 
+
+/* Grupo 14 
 	ENZO LIBÓRIO FRAGA
 	JOÃO VICTOR CARVALHO SIMÕES
 	JOÃO CARLOS CRUZ SANTOS
 	MAXWELL ALEXANDRE SOUZA
-    */
+*/
+
 Helpers
     /* Caracteres Básicos */
     digito = ['0' .. '9'];
@@ -18,17 +20,13 @@ Helpers
     lf = 10;
     tab = 9;
     espaco = ' ';
-    fim_de_linha = cr | lf | cr lf;
+    fim_de_linha = cr | lf | (cr lf);
     espacos = (espaco | tab | fim_de_linha)+;
 
     /* Auxiliares para Comentários de Bloco no estilo C (não aninhados) */
     qualquer_caractere = [0 .. 0xffff];
     nao_traco = [qualquer_caractere - '-'];
-    nao_barra_traco = [qualquer_caractere - ['/' + '-']];
-
-States
-    /* estado basico(nem precisava declarar mas é bom garantir) */
-    normal;
+    nao_barra_traco = [qualquer_caractere - ('/' + '-')];
 
 Tokens
     /* Palavras Reservadas e Tipos Primitivos */
@@ -57,7 +55,7 @@ Tokens
     menos = '-';
     ponto = '.';
     barra = '/';
-    resto = '\';
+    resto = '\\';
     div_inteira = '//';
     potencia = '`';
 
@@ -72,20 +70,13 @@ Tokens
     ou_logico = 'v';
     guarda_pipe = '||';
 
-    /* Identificadores
-       - Devem ter duas ou mais letras.
-       - Parâmetros primitivos(ID): apenas letras minúsculas (pelo menos 2).
-       - Constantes: apenas letras maiúsculas (pelo menos 2).
-       - Funções: iniciam com maiúscula e contêm pelo menos mais uma letra.
-       - numeral inteiro pode ser pelo menos um digito normal x ou binario 0by para y = qualquer numero binario
-    */
-    id_const = letra_maiuscula letra_maiuscula+;
-    id_funcao = letra_maiuscula letra+;
-    id = letra_minuscula letra_minuscula+;
+    /* Identificadores e Numerais */
+    ID_CONST = letra_maiuscula letra_maiuscula+;
+    ID_FUNCAO = letra_maiuscula letra+;
+    ID = letra_minuscula letra_minuscula+;
 
-    /* Numerais */
-    numeral_int =  ( digito+ ) | ( '0b' digito_bin+ );
-    numeral_real = ( digito+ ) ',' ( digito+ );
+    numeral_int = (digito+) | ('0b' digito_bin+);
+    numeral_real = (digito+) ',' (digito+);
 
     /* Ignorados (Brancos e Comentários) */
     brancos = espacos;
@@ -96,9 +87,3 @@ Ignored Tokens
     brancos,
     comentario_linha,
     comentario_bloco;
-/*
-vai precisar depois para fazer as glc's na parte sintatica ex:.
-Productions
-    algoritmo = dec_funcao+ ;
-
- */

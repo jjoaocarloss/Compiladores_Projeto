@@ -1,0 +1,42 @@
+/--
+  codigo3.qui
+  Foco em funcoes de alta ordem personalizadas, assinaturas sem parametros,
+  assinatura aninhada, chamada sem argumentos e uso das funcoes matematicas.
+--/
+-- Funcao de Maximo 
+[ numero Maximo [ numero valX | numero valY ] :
+  [
+    || < valX >> valY > = valX
+    || # = valY
+  ]
+]
+
+-- Processa binario
+[ numero ProcessaBinario [ numero valA | numero valB | numero Operacao [ numero | numero ] ] :
+  Operacao [ valA | valB ]
+]
+
+-- Funcao sem parametros 
+[ numero ObtemConstante [ ] :
+  Logaritmo [ 100 ]
+]
+
+-- Funcao que recebe uma assinatura sem parametros
+[ numero ExecutaSemArg [ numero Executador [ ] ] :
+  Executador [ ]
+]
+
+-- Assinatura aninhada
+[ numero ProcessadorAvancado [ numero SuperOp [ numero | numero Aux [ numero ] ] ] :
+  0
+]
+
+-- Funcao de alta ordem
+[ numero TestaAltaOrdem [ numero parametroBase ] :
+  < Cosseno [ ProcessaBinario [ parametroBase | 0b10 | Maximo ] ] + Tangente [ ExecutaSemArg [ ObtemConstante ] ] >
+]
+
+-- Ponto de entrada obrigatorio da linguagem
+++ [ numero Principal [ ] :
+  TestaAltaOrdem [ 10 ]
+]

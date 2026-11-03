@@ -1,0 +1,15 @@
+/--
+  codigo1.qui
+  Testa o marcador principal, blocos de expressao, constantes, e tipos primitivos (decimal, binario, real), operadores aritmeticos basicos (+, -, ., /, //, \, `) e precedencia ('<' exp '>') .
+--/
+
+++ [ numero Principal [ ] :
+  [
+    [ numero VALORDEC [ 5,75 ] ]
+    [ numero VALORBIN [ 0b1011 ] ]
+    [ numero VALORNEG [ 0 - VALORDEC ] ]
+    
+    -- Expressao matematica complexa alterando a precedencia com ( '<' exp '>' )
+    <VALORDEC + VALORBIN> . <VALORBIN - VALORNEG> / <Seno [VALORDEC] // <2 \ 3>> ` 2  
+]
+]

@@ -3,7 +3,6 @@
   Foco em funcoes de alta ordem personalizadas, assinaturas sem parametros,
   assinatura aninhada, chamada sem argumentos e uso das funcoes matematicas.
 --/
-
 -- Funcao de Maximo 
 [ numero Maximo [ numero valX | numero valY ] :
   [
@@ -27,12 +26,12 @@
   Executador [ ]
 ]
 
--- Assinatura aninhada (parametro_assinatura -> assinatura)
+-- Assinatura aninhada
 [ numero ProcessadorAvancado [ numero SuperOp [ numero | numero Aux [ numero ] ] ] :
   0
 ]
 
--- Funcao de alta ordem sem repeticao de constantes locais
+-- Funcao de alta ordem
 [ numero TestaAltaOrdem [ numero parametroBase ] :
   < Cosseno [ ProcessaBinario [ parametroBase | 0b10 | Maximo ] ] + Tangente [ ExecutaSemArg [ ObtemConstante ] ] >
 ]

@@ -1,0 +1,28 @@
+/--
+ codigo2.qui
+ Foco em guardas, operadores relacionais, logicos e recursao.
+ Funcoes basicas com booleano e recursao
+--/
+
+-- função fatorial basica para mostrar recursao
+[ numero Fatorial [ numero num ] :
+  [
+    || < num == 0 > v < num == 1 > = 1
+    || < num << 0 > = - 1 
+    -- menos um de retorno para demonstrar que houve erro, o fatorial não pode ser menor que zero
+    || # = < num . Fatorial [ num-1 ] >
+  ]
+]
+
+-- booleano basica para teste de logica
+[ booleano Validalogica [ booleano valA | booleano valB ] :
+  [
+    || < valA ^ valB > = V
+    || ¬ valA = F
+    || # = < valA v valB >
+  ]
+]
+
+++ [ numero Testafatorial [ ] :
+    Fatorial [10]
+]
