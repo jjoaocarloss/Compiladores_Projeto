@@ -120,10 +120,10 @@ obs:. NO incio os arquivos são criados e contidos na pasta ETAPAS, e ao final e
 
 | Integrante | GitHub | E-mail / Contato |
 | :--- | :---: | :---: |
-| **Enzo Libório Fraga** | [@{usuario}](https://github.com/{enzoliborio}) | `{enzoliborioo@gmail.com}` |
-| **João Victor Carvalho Simões** | [@{usuario}](https://github.com/{szmax-1}) | `{email}` |
-| **João Carlos Cruz Santos** | [@{usuario}](https://github.com/{victorsimoes1997-ops}) | `{email}` |
-| **Maxwell Alexandre Souza** | [@{usuario}](https://github.com/{jjoaocarloss}) | `{joaocarlos1.comp@gmail.com}` |
+| **Enzo Libório Fraga** | [@{usuario}](https://github.com/enzoliborio) | `{enzoliborioo@gmail.com}` |
+| **João Victor Carvalho Simões** | [@{usuario}](https://github.com/szmax-1) | `{email}` |
+| **João Carlos Cruz Santos** | [@{usuario}](https://github.com/victorsimoes1997-ops) | `{email}` |
+| **Maxwell Alexandre Souza** | [@{usuario}](https://github.com/jjoaocarloss) | `{joaocarlos1.comp@gmail.com}` |
 
 </div>
 
