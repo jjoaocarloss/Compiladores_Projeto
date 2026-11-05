@@ -22,7 +22,7 @@ Este repositório contém a implementação completa do compilador da linguagem 
 - **Instituição:** Universidade Federal de Sergipe (UFS)
 - **Disciplina:** Compiladores
 - **Docente:** Profa. Beatriz Trinchão Andrade
-- **Semestre:** {SEU-SEMESTRE, ex: 2026.2}
+- **Semestre:** {2026.2}
 
 ---
 
@@ -41,9 +41,9 @@ Quinas é uma linguagem funcional experimental baseada em conceitos de linguagen
 
 | Etapa | Descrição | Status | Entrega |
 | :---: | :--- | :---: | :---: |
-| **01** | **Códigos em Quinas:** Elaboração dos códigos de teste (`.qui`) abrangendo toda a gramática. | 🟢 Concluído | `{DATA_OU_STATUS}` |
-| **02** | **Análise Léxica:** Reconhecimento e tokenização da linguagem via SableCC. | 🟢 Concluído | `{DATA_OU_STATUS}` |
-| **03** | **Análise Sintática:** Construção e validação da árvore sintática concreta (CST). | 🟢 Concluído | `{DATA_OU_STATUS}` |
+| **01** | **Códigos em Quinas:** Elaboração dos códigos de teste (`.qui`) abrangendo toda a gramática. | 🟢 Concluído | 
+| **02** | **Análise Léxica:** Reconhecimento e tokenização da linguagem via SableCC. | 🟢 Concluído |
+| **03** | **Análise Sintática:** Construção e validação da árvore sintática concreta (CST). | 🟢 Concluído |
 | **04** | **Árvore Sintática Abstrata (AST):** Simplificação da árvore sintática. | 🟡 Em Andamento | `{DATA_OU_STATUS}` |
 | **05** | **Análise Semântica:** Tabela de símbolos, checagem de escopo e tipos. | 🔴 Pendente | `{DATA_OU_STATUS}` |
 | **06** | **Geração de Código:** Tradução do código Quinas para a linguagem alvo (C ou Haskell). | 🔴 Pendente | `{DATA_OU_STATUS}` |
@@ -120,15 +120,15 @@ obs:. NO incio os arquivos são criados e contidos na pasta ETAPAS, e ao final e
 
 | Integrante | GitHub | E-mail / Contato |
 | :--- | :---: | :---: |
-| **Enzo Libório Fraga** | [@{usuario}](https://github.com/{usuario}) | `{email}` |
-| **João Victor Carvalho Simões** | [@{usuario}](https://github.com/{usuario}) | `{email}` |
-| **João Carlos Cruz Santos** | [@{usuario}](https://github.com/{usuario}) | `{email}` |
-| **Maxwell Alexandre Souza** | [@{usuario}](https://github.com/{usuario}) | `{email}` |
+| **Enzo Libório Fraga** | [@{usuario}](https://github.com/{enzoliborio}) | `{enzoliborioo@gmail.com}` |
+| **João Victor Carvalho Simões** | [@{usuario}](https://github.com/{szmax-1}) | `{email}` |
+| **João Carlos Cruz Santos** | [@{usuario}](https://github.com/{victorsimoes1997-ops}) | `{email}` |
+| **Maxwell Alexandre Souza** | [@{usuario}](https://github.com/{jjoaocarloss}) | `{joaocarlos1.comp@gmail.com}` |
 
 </div>
 
 ---
 
 <div align="center">
-Desenvolvido com ☕ e Java para a disciplina de Compiladores — UFS.
+Desenvolvido com ☕ , SableCC e Java para a disciplina de Compiladores — UFS.
 </div>
