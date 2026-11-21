@@ -1,0 +1,12 @@
+++ 
+[numero CoeficientesFixos [numero xx | numero yy] : 
+   [
+      [
+         [numero CA [4]]
+         [numero CB [2]]
+         [numero CC [3]]
+         CA.xx + CB.yy + CC
+      ]
+   ] 
+]
+

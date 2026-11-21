@@ -1,0 +1,4 @@
+++ [ booleano Par [numero num] : [[  
+    || <num\2==0> = V
+    || # = F
+ ]]]

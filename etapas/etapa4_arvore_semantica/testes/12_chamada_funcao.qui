@@ -1,0 +1,7 @@
+[numero Um[]: [1,0] ]
+
+[numero Quadrado[numero arg]: [arg.arg] ]
+
+[numero Soma[numero arga | numero argb]: [arga + argb] ]
+
+++ [numero TesteChamadas [] : [Um[] + Quadrado[3,0] - Soma[2,0 | 4,0] ]]

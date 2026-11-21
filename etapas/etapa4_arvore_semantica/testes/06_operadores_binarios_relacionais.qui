@@ -1,0 +1,2 @@
+++ [ booleano IgualdadeRedundante [numero numa | numero numb] : [numa>>numb==numa<<numb] ]
+

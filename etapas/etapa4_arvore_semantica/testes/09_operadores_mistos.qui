@@ -1,0 +1,16 @@
+
+
+[ numero OlhaDado [numero numeroaleatorio] : [numeroaleatorio/6+1] ]
+
+
+[ booleano EhPar [numero num] : 
+ [ 
+   [
+   || <num/2==0> = V
+   || # = F
+   ] 
+  ]
+ ]
+
+
+++ [booleano CaiuPar [numero rand] : [ EhPar [OlhaDado[rand] ] ] ]

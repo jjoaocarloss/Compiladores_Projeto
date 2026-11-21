@@ -1,0 +1,10 @@
+++ [numero Fibonacci [numero num]: 
+  [ 
+    [ 
+     ||<num==0> = num
+     ||<num==1> = num
+     ||# = Fibonacci[num - 1] + Fibonacci [num - 2]
+    ]      
+  ]
+]
+

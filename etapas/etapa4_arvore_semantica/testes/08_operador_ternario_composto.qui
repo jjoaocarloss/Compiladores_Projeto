@@ -1,0 +1,5 @@
+++ [ booleano NaoNulo [numero num] : [[  
+    || <num << 0> = V
+    || <num >> 0> = V
+    || # = F
+ ]]]

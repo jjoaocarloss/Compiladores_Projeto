@@ -1,0 +1,16 @@
+
+[booleano Maior[numero arga | numero argb]: [arga >> argb] ]
+
+
+[booleano Menor[numero arga | numero argb]: [arga << argb] ]
+
+
+[booleano Igual[numero arga | numero argb]: [arga == argb] ]
+
+
+[booleano Compare[ numero arga | numero argb | numero Operacao[numero|numero] ]: 
+   [ Operacao[arga|argb] ]
+]
+
+++ [booleano Principal [] : [Compare[ 1 | 3 | Igual]]]
+

@@ -1,0 +1,9 @@
+++ [booleano Natural [numero num] : 
+   [
+      [
+         [numero MENOSUM [-1]]
+         num>>MENOSUM
+      ]
+   ] 
+]
+

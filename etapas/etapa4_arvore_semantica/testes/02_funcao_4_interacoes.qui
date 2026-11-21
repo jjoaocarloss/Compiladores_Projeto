@@ -1,0 +1,11 @@
+[ booleano Verdade[]: [V] ]
+
+[numero Identidade[numero arg]: [arg] ]
+
+[numero NumeroOuro [] : [1,61803398875] ]
+
+++ [numero Principal [] : 
+   [
+   Identidade[NumeroOuro[]]
+   ]
+]
